@@ -1,26 +1,27 @@
-@media (min-width:375px ){
+@media (min-width:400px ){
 
 body {
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 16px;
+    font-size: 8px;
+    height: 70vh
 }
 main {
-    background-image: url(/images/pattern-background-desktop.svg);
+    background-image: url(/images/pattern-background-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     justify-content: center;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-wrap: wrap;
 }
 
 .card {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    width: 40%;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    width: 25%;
     min-width: 370px;
-    max-height: 800px;
+    max-height: 700px;
     background-color: hsl(225, 100%, 98%);
     border-radius: 20px;
     display: block;
@@ -30,16 +31,20 @@ main {
 
 img.logo {
     width: 100%; 
-    max-height: 30vh;
+    max-height: 25vh;
     border-radius: 20px 20px 0 0;
 }
 
 .plan-main, .payment {
     display: inline-flex;
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
     width: 80%;
     border-radius: 10px;
+}
+
+.cancle {
+    margin-top: 20px;
 }
 
 .plan-main {
@@ -48,8 +53,8 @@ img.logo {
 }
 
 .plan-main img{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin: 10px
 }
 
@@ -61,7 +66,6 @@ div.change {
     margin: 35px 35px 35px 10px;
 }
 
-
 .payment {
     background-color: blue;
     color: white;
@@ -72,24 +76,20 @@ div.change {
     width: 80%;
 }
 
-.cancle {
-    margin-top: 50px;
-}
-
 .attribution {
     margin-bottom: 20px;
 }
 
 }
 
-@media (max-width:600px ){
+@media (max-width:400px ){
     body {
         font-family: 'Red Hat Display', sans-serif;
-        font-size: 0.7rem;
+        font-size: 0.4rem;
     }
 
     main {
-        background-image: url(/images/pattern-background-mobile.svg);
+        background-image: url(/images/pattern-background-mobile.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -101,15 +101,14 @@ div.change {
 
     img.logo {
         width: 100%; 
-        max-height: 30vh;
+        max-height: 25vh;
         border-radius: 20px 20px 0 0;
     }
     
     .card {
-        margin-top: 10vh;
-        margin-bottom: 10vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
         width: 80%;
-        max-height: 600px;
         background-color: hsl(225, 100%, 94%);
         border-radius: 20px;
         display: block;
@@ -117,24 +116,25 @@ div.change {
         text-align: center;
     }
 
+    .plan-main, .payment {
+        width: 90%;
+        display: inline-flex;
+        border-radius: 10px;
+    }
+
     .plan-main img{
-        min-width: 30px;
-        min-height: 0px;
-        margin: 15px
+        max-width: 50px; 
+        max-height: 50px;
+        margin: 30px 3px 30px 5px 
     }
     .plan-main {
         background-color: snow;
-        border-radius: 10px;
         display: inline-flex;
         justify-content: space-between;
     }
     
     .plan-main, .payment, .cancle{
         margin-top: 20px;
-    }
-    .plan-main, .payment {
-        width: 90%;
-        display: inline-flex;
     }
 
     div.change {
